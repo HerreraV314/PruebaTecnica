@@ -1,0 +1,94 @@
+/* ========================================================================= */
+/* 1. ESTILOS GENERALES (BODY Y FONDO) */
+/* ========================================================================= */
+body {
+    font-family: Arial;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra el formulario verticalmente */
+    min-height: 100vh; /* Ocupa el 100% de la altura de la pantalla */
+    margin: 0;
+}
+
+/* ========================================================================= */
+/* 2. CONTENEDOR PRINCIPAL (EL FORMULARIO) */
+/* ========================================================================= */
+.caja {
+    background-color: #ffffff;
+    border: 1px solid #000000; /* Borde más suave */
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra más moderna y difuminada */
+}
+
+.caja h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #333333;
+}
+
+/* ========================================================================= */
+/* 3. ESTRUCTURA DE FILAS Y COLUMNAS (FLEXBOX) */
+/* ========================================================================= */
+.fila {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.columna {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+/* ========================================================================= */
+/* 4. ESTILOS DE LOS CAMPOS (INPUTS, SELECTS Y TEXTAREA) */
+/* ========================================================================= */
+input[type="text"], 
+select, 
+textarea {
+    width: 100%;
+    padding: 8px; /* Un poco más de espacio interno para mayor legibilidad */
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    font-family: inherit;
+    outline: none; /* Quita el borde azul por defecto de algunos navegadores */
+}
+
+/* Efecto al hacer clic en un campo (Foco) */
+input[type="text"]:focus, 
+select:focus, 
+textarea:focus {
+    border-color: #1aab8a; /* El borde se pinta del color de tu tema */
+}
+
+textarea {
+    resize: vertical; /* Permite agrandar el cuadro solo hacia abajo, no hacia los lados */
+    min-height: 80px;
+}
+
+input[type="checkbox"] {
+    margin: 7px 5px 10px 0; 
+}
+
+/* ========================================================================= */
+/* 5. ESTILOS DEL BOTÓN */
+/* ========================================================================= */
+button {
+    display: block;
+    margin: 30px auto 0 auto;
+    background-color: #1aab8a;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 12px 50px;
+}
+
